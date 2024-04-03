@@ -10,3 +10,11 @@ function makeSticky() {
     navbar.classList.remove("sticky");
   }
 }
+
+@media (max-width: 600px) {
+    .profile-pic {
+        float: none; /* Prevents the image from floating on small devices */
+        display: block; /* Ensures the image and text are stacked */
+        margin: 0 auto; /* Centers the image above the text */
+    }
+}
