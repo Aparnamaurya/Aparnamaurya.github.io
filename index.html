@@ -4,61 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aparna Maurya's Portfolio</title>
-    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Link to your CSS file -->
-    <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script> <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Aparna Maurya</h1>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:aparnamaurya2612@gmail.com">aparnamaurya2612@gmail.com</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/Aparnamaurya">github.com/Aparnamaurya</a></p>
-        <p><i class="fas fa-phone"></i> +91-7607930860</p>
-    </header>
-    
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>I'm a Senior Deep Learning Engineer with extensive experience in AIML R&D...</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Nagarro Software, Gurugram, India</h3>
-            <p><strong>Senior Deep Learning Engineer at AIML R&D department (July 2019 - Present)</strong></p>
+    <nav id="navbar">
+        <div class="container">
             <ul>
-                <li><i class="fas fa-project-diagram"></i> Shopify AI Tool for Improved Recommendations and Retention...</li>
-                <li><i class="fas fa-robot"></i> Smart Onboarding and Knowledge Platform...</li>
-                <!-- Add more items here -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <!-- Add more experience items here -->
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container">
+        <h1>Aparna Maurya</h1>
+        <p>Deep Learning Engineer</p>
+        <a href="#projects" class="btn">View My Work</a>
     </section>
-    
-    <section id="projects">
-        <h2>Other Projects</h2>
-        <ul>
-            <li><i class="fas fa-chart-line"></i> Financial Market Analysis...</li>
-            <li><i class="fas fa-calendar-alt"></i> Rel-Event...</li>
-            <!-- Add more projects here -->
-        </ul>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Shopify AI Tool for Improved Recommendations and Retention</h3>
+            <p>Developed an e-commerce solution for Shopify, utilizing ChatGPT and Elasticsearch-based RAG technology.
+                This tool provides precise product recommendations, real-time order tracking, and personalized advertising campaigns based on user interactions. Overcame integration challenges, including the integration of Elasticsearch with Shopify's ecosystem and the adaptation of ChatGPT’s AI within Shopify's databases. Achieved a 40% improvement in recommendation accuracy and a 25% increase in customer retention. The tool's analytics dashboard offers Shopify merchants actionable insights for marketing strategies, improving product visibility and business performance.</p>
+        </div>
+        <div class="project">
+            <h3>Smart Onboarding and Knowledge Platform</h3>
+            <p>Developed an employee onboarding system for diverse business units, enabling team members to create and share a knowledge base in formats like PDF, text, audio, and video. Integrated Elasticsearch to allow complex searches across all content types, enhancing information retrieval. Collaborated on deep learning models for automatic dashboard generation, focusing on a tailored onboarding experience. The platform resulted in a 50% reduction in time-to-productivity for new hires by providing immediate access to essential resources and insights.</p>
+        </div>
+        <div class="project">
+            <h3>Opinion Analysis for Airlines</h3>
+            <p>Developed a cost-effective, NLP-based solution for an airline client on GCP, designed to parse and analyze customer feedback for strategic decision-making. The interactive dashboard offers real-time analysis of services, leveraging NER for subject identification and aspect-based sentiment analysis for emotion detection. Utilized GCP functions for a scalable and low-cost deployment, enabling real-time visualization of customer sentiments on a user-friendly platform.</p>
+        </div>
+        <div class="project">
+            <h3>PowerPoint Redaction System</h3>
+            <p>Developed for a leading global consulting firm, this system significantly reduces manual efforts by 70% through the automatic redaction of sensitive information (such as logos, revenue figures, charts, and client names) in PowerPoint presentations, ensuring compliance with privacy and security policies. Utilized Named Entity Recognition (NER) models for text, object detection algorithms for images, and statistical methods for charts. Implemented a serverless architecture on AWS for efficient system deployment and scalability</p>
+        </div>
+        <div class="project">
+            <h3>Automated Information Retrieval System</h3>
+            <p>Developed a system for a global logistics company that automated the extraction of critical data from complex, unstructured email bodies. This solution streamlined the process of populating forms and updating the cloud database, resulting in a 90% reduction in manual labor hours by efficiently identifying and auto-filling relevant information.</p>
+        </div>
     </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Indian Institute of Information Technology, Guwahati</strong> - Bachelor of Technology in Computer Science and Engineering, 8.85 CGPA.</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><i class="fas fa-laptop-code"></i> Industry Knowledge: NLP, Data Structures...</li>
-            <li><i class="fas fa-database"></i> Technologies: SQL, Postgres, Docker...</li>
-            <!-- Add more skills here -->
-        </ul>
-    </section>
-    
+
+    <!-- Add other sections here: About, Experience, Skills, Education, Contact -->
+
     <footer>
-        <p>Connect with me on <a href="https://github.com/Aparnamaurya"><i class="fab fa-github"></i> GitHub</a>.</p>
+        <p>Connect with me on <a href="https://github.com/Aparnamaurya">GitHub</a>.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
