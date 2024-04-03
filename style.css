@@ -52,3 +52,10 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+.profile-pic {
+    max-width: 270px; /* Adjust based on your preference */
+    border-radius: 50%; /* Creates a circular shape */
+    margin-left: 20px; /* Adds some space between your image and text */
+    float: right; /* Aligns the image to the left of your text */
+}
