@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project notes on applied AI, research, achievements, and lessons learned by Aparna Maurya.">
+    <meta name="theme-color" content="#f6f4ef">
+    <title>Project Notes | Aparna Maurya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">Aparna Maurya</a>
+            <ul>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="https://www.linkedin.com/in/aparna-maurya/" target="_blank" rel="noreferrer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container notes-page">
+        <header class="notes-intro">
+            <p class="eyebrow">Project notes</p>
+            <h1>What I built, what changed, and what I learned.</h1>
+            <p>Short reflections on selected AI projects. Outcomes below are drawn from my CV; the learning notes summarize the engineering principles I took from this work.</p>
+        </header>
+
+        <article class="project-note" id="agentic-evaluation">
+            <p class="eyebrow">Evaluation · Agentic AI</p>
+            <h2>Making agentic AI quality measurable</h2>
+            <h3>The work</h3>
+            <p>At ServiceNow, I helped design an enterprise-scale evaluation framework for customer-facing agentic AI. I contributed three of the four core metrics that are now deployed for customer-facing evaluation, and developed an LLM-as-a-Judge approach to standardize performance tracking.</p>
+            <h3>Achievement</h3>
+            <p>The framework brought a consistent evaluation approach into the product workflow and helped teams move from experiments toward production with clearer performance signals. I also built lifecycle components spanning data curation, fine-tuning, testing, and deployment.</p>
+            <h3>What I learned</h3>
+            <p>Evaluation is part of the product, not a final testing step. Useful metrics need to reflect real user outcomes, stay interpretable to cross-functional teams, and be repeatable as models and workflows change. Automated judging can help scale evaluation, but it needs deliberate calibration and human oversight.</p>
+        </article>
+
+        <article class="project-note" id="rag-assistant">
+            <p class="eyebrow">Retrieval · Generative AI</p>
+            <h2>Grounding an e-commerce assistant in useful product context</h2>
+            <h3>The work</h3>
+            <p>I developed a Shopify e-commerce assistant combining generative AI with Elasticsearch-based retrieval. It supported product recommendations and customer interactions such as order tracking and personalized suggestions.</p>
+            <h3>Achievement</h3>
+            <p>The solution achieved a 40% improvement in recommendation precision and a 25% increase in customer retention.</p>
+            <h3>What I learned</h3>
+            <p>Retrieval quality is central to a useful generative experience: fluent output is not enough if the retrieved context is irrelevant. Product relevance and customer outcomes also need to be evaluated together, so improvements in model behavior translate into a better shopping experience.</p>
+        </article>
+
+        <article class="project-note" id="knowledge-platform">
+            <p class="eyebrow">Search · Knowledge systems</p>
+            <h2>Making organizational knowledge easier to find</h2>
+            <h3>The work</h3>
+            <p>I helped build an employee onboarding and knowledge platform that brought PDF, text, audio, and video resources into a searchable experience, using Elasticsearch for information retrieval.</p>
+            <h3>Achievement</h3>
+            <p>The platform reduced time-to-productivity for new hires by 50% by helping them find relevant resources through self-service search.</p>
+            <h3>What I learned</h3>
+            <p>Search across different media formats is as much a data and indexing problem as a user-interface problem. A useful knowledge tool depends on making content consistently discoverable and connecting search relevance to the task people are trying to complete.</p>
+        </article>
+
+        <article class="project-note" id="airline-analysis">
+            <p class="eyebrow">NLP · Customer insight</p>
+            <h2>Turning long-form customer feedback into timely insight</h2>
+            <h3>The work</h3>
+            <p>I developed a GCP-based NLP pipeline for airline customer feedback. It used named entity recognition and aspect-based sentiment analysis to identify subjects and sentiment in long-form responses.</p>
+            <h3>Achievement</h3>
+            <p>The analysis turnaround was reduced from weeks to three hours, helping teams access customer insight much sooner.</p>
+            <h3>What I learned</h3>
+            <p>Useful sentiment analysis needs to explain what customers are reacting to, not just label a whole message as positive or negative. Pairing aspect identification with sentiment makes results easier to connect to service decisions, while deployment choices matter for keeping analysis timely and practical.</p>
+        </article>
+
+        <article class="project-note" id="redaction">
+            <p class="eyebrow">Computer vision · Privacy</p>
+            <h2>Automating sensitive-content redaction in presentations</h2>
+            <h3>The work</h3>
+            <p>I engineered a system to detect and redact sensitive PowerPoint content. The approach combined NER for text with object detection for images and was deployed as serverless inference on AWS.</p>
+            <h3>Achievement</h3>
+            <p>The system reduced manual effort by 70% while supporting privacy and security requirements.</p>
+            <h3>What I learned</h3>
+            <p>Documents are multimodal: important information may appear in text, images, or charts, so a single detection method is unlikely to cover every case. For privacy-sensitive automation, reliable review paths and careful evaluation are as important as detection performance.</p>
+        </article>
+
+        <article class="project-note" id="market-prediction">
+            <p class="eyebrow">Machine learning · Time series</p>
+            <h2>Exploring financial prediction with price and news signals</h2>
+            <h3>The work</h3>
+            <p>For my B.Tech project, I compared Random Forests, deep neural networks, LSTMs, and Bi-LSTMs for stock prediction using large-scale price and news data. I explored sentiment signals alongside time-series information.</p>
+            <h3>Achievement</h3>
+            <p>The project gave me hands-on experience comparing classical machine-learning models with recurrent deep-learning approaches and combining textual and temporal features.</p>
+            <h3>What I learned</h3>
+            <p>Model comparisons are only meaningful when the data and evaluation setup are consistent. Financial time series are noisy, and adding more signals does not automatically improve predictions; careful baselines and honest evaluation are essential to interpreting results.</p>
+        </article>
+
+        <p class="back-link"><a href="index.html#projects">← Back to portfolio</a></p>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <p>© 2026 Aparna Maurya</p>
+            <p><a href="https://www.linkedin.com/in/aparna-maurya/" target="_blank" rel="noreferrer">Get in touch</a></p>
+        </div>
+    </footer>
+</body>
+</html>

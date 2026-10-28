@@ -3,73 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aparna Maurya's Portfolio</title>
+    <meta name="description" content="Aparna Maurya — AI researcher exploring robotics, embodied intelligence, and applied machine learning.">
+    <meta name="theme-color" content="#f6f4ef">
+    <title>Aparna Maurya</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav id="navbar">
-        <div class="container">
+        <div class="container nav-inner">
+            <div class="brand">A.M.</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="project-notes.html">Project notes</a></li>
+                <li><a href="https://www.linkedin.com/in/aparna-maurya/" target="_blank" rel="noreferrer">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="container"> <img src="images/aparna.jpg" alt="Aparna Maurya" class="profile-pic">
-        <h3>Aparna Maurya</h3>
-        <i>Deep Learning Engineer @ Nagarro</i>
-        <p>Welcome to my digital space. I am Aparna Maurya, an AI enthusiast driven by a vision to seamlessly integrate AI into our daily lives. With a focus on Natural Language Processing, I aim to build bridges between human creativity and technological innovation. Let’s explore the potential of AI to create a smarter, more connected world.
-            <br><br>
-            <i>Creating my fair share of Impact.</i></p>
-        <a href="#projects" class="btn">View My Work</a>
-    </section>
+    <header id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">AI researcher &amp; engineer · Edinburgh, UK</p>
+                <h1>Aparna Maurya</h1>
+                <p class="summary">MSc AI student at Edinburgh with 6+ years building applied AI systems. Now exploring robotics and embodied intelligence, with experience in agentic AI, NLP, computer vision, and ML deployment.</p>
+                <p class="availability"><span aria-hidden="true"></span> Open to robotics, research &amp; applied ML roles</p>
+                <div class="cta-row">
+                    <a href="https://www.linkedin.com/in/aparna-maurya/" target="_blank" rel="noreferrer" class="btn primary">Contact on LinkedIn</a>
+                    <a href="documents/Aparna_Maurya_CV.pdf" class="btn secondary" download>Download CV</a>
+                    <a href="https://www.linkedin.com/in/aparna-maurya/" target="_blank" rel="noreferrer" class="hero-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="images/aparna.jpg" alt="Aparna Maurya" class="profile-pic">
+            </div>
+        </div>
+    </header>
 
-     <!-- About Me Section -->
-    <section id="about" class="container">
-        <h1>About Me</h1>
-        <p>Hola! I’m Aparna Maurya, been working in the field of AI, with a special interest in Natural Language Processing (NLP). My work revolves around using AI to create innovative solutions that address real-world challenges. <br>
-I’m actively seeking opportunities for research and discussions in creating and productionizing solutions, aiming to contribute to advancements in technology, especially NLP. I'm keen on collaborating with professionals who are exploring the cutting edges of tech. <br>
-<br><i>Feel free to reach out if you’re interested in exploring AI possibilities together.</i></p>
-    </section>
+    <main>
+        <section id="experience" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Experience</p>
+                <h2>AI research, delivered in production.</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="experience-meta"><strong>Senior Research Scientist</strong><span>ServiceNow · 2024–2026</span></p>
+                        <p>Built an evaluation framework for customer-facing agentic AI, delivering 3 of 4 deployed core metrics and an LLM-as-a-Judge workflow.</p>
+                    </div>
+                </article>
 
+                <article class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="experience-meta"><strong>DL Engineer → Senior DL Engineer</strong><span>Nagarro · 2019–2024</span></p>
+                        <p>Promoted to senior engineer; delivered RAG (+40% precision, +25% retention), knowledge search (-50% onboarding time), and feedback NLP (weeks to 3 hours).</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Shopify AI Tool for Improved Recommendations and Retention</h3>
-            <p>Developed an e-commerce solution for Shopify, utilizing ChatGPT and Elasticsearch-based RAG technology.
-                This tool provides precise product recommendations, real-time order tracking, and personalized advertising campaigns based on user interactions. Overcame integration challenges, including the integration of Elasticsearch with Shopify's ecosystem and the adaptation of ChatGPT’s AI within Shopify's databases. Achieved a 40% improvement in recommendation accuracy and a 25% increase in customer retention. The tool's analytics dashboard offers Shopify merchants actionable insights for marketing strategies, improving product visibility and business performance.</p>
-        </div>
-        <div class="project">
-            <h3>Smart Onboarding and Knowledge Platform</h3>
-            <p>Developed an employee onboarding system for diverse business units, enabling team members to create and share a knowledge base in formats like PDF, text, audio, and video. Integrated Elasticsearch to allow complex searches across all content types, enhancing information retrieval. Collaborated on deep learning models for automatic dashboard generation, focusing on a tailored onboarding experience. The platform resulted in a 50% reduction in time-to-productivity for new hires by providing immediate access to essential resources and insights.</p>
-        </div>
-        <div class="project">
-            <h3>Opinion Analysis for Airlines</h3>
-            <p>Developed a cost-effective, NLP-based solution for an airline client on GCP, designed to parse and analyze customer feedback for strategic decision-making. The interactive dashboard offers real-time analysis of services, leveraging NER for subject identification and aspect-based sentiment analysis for emotion detection. Utilized GCP functions for a scalable and low-cost deployment, enabling real-time visualization of customer sentiments on a user-friendly platform.</p>
-        </div>
-        <div class="project">
-            <h3>PowerPoint Redaction System</h3>
-            <p>Developed for a leading global consulting firm, this system significantly reduces manual efforts by 70% through the automatic redaction of sensitive information (such as logos, revenue figures, charts, and client names) in PowerPoint presentations, ensuring compliance with privacy and security policies. Utilized Named Entity Recognition (NER) models for text, object detection algorithms for images, and statistical methods for charts. Implemented a serverless architecture on AWS for efficient system deployment and scalability</p>
-        </div>
-        <div class="project">
-            <h3>Automated Information Retrieval System</h3>
-            <p>Developed a system for a global logistics company that automated the extraction of critical data from complex, unstructured email bodies. This solution streamlined the process of populating forms and updating the cloud database, resulting in a 90% reduction in manual labor hours by efficiently identifying and auto-filling relevant information.</p>
-        </div>
-    </section>
+        <section id="projects" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2>Selected applied AI projects.</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project">
+                    <h3><a href="project-notes.html#agentic-evaluation">Agentic AI evaluation ↗</a></h3>
+                    <p>Contributed 3 of 4 deployed evaluation metrics and an LLM-as-a-Judge workflow.</p>
+                </article>
 
-    <!-- Add other sections here: Experience, Skills, Education, Contact -->
+                <article class="project">
+                    <h3><a href="project-notes.html#rag-assistant">RAG e-commerce assistant ↗</a></h3>
+                    <p>Elasticsearch RAG delivered +40% recommendation precision and +25% retention.</p>
+                </article>
+
+            </div>
+            <p class="all-projects-link"><a href="project-notes.html">Explore all project notes and lessons learned →</a></p>
+        </section>
+
+        <section id="education" class="section container compact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Education</p>
+                <h2>Education &amp; focus.</h2>
+            </div>
+            <p class="education-line"><strong>MSc AI</strong>, Edinburgh (2026–2027 expected) <span>·</span> <strong>B.Tech CSE</strong>, IIIT Guwahati (2015–2019)</p>
+            <p class="expertise-line"><strong>Research:</strong> Robotics · embodied AI · perception <span class="skills-short"><strong>Tools:</strong> Python · PyTorch · OpenCV · AWS/GCP</span></p>
+        </section>
+
+    </main>
 
     <footer>
-        <p>Connect with me on <a href="https://github.com/Aparnamaurya">GitHub</a>.</p>
+        <div class="container footer-inner">
+            <p>Opportunity, discussion, or coffee? <a href="https://www.linkedin.com/in/aparna-maurya/" target="_blank" rel="noreferrer">Contact me on LinkedIn</a> · <a href="https://github.com/Aparnamaurya" target="_blank" rel="noreferrer">GitHub</a></p>
+            <p>© 2026 Aparna Maurya</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
