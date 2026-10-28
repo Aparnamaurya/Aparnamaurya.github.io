@@ -867,3 +867,75 @@ footer {
         padding: 0.58rem 0.85rem;
     }
 }
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #111820;
+    --bg-strong: #17212c;
+    --panel: #18232e;
+    --panel-soft: #1d2935;
+    --text: #edf2f7;
+    --muted: #b6c1cc;
+    --accent: #a7c0ff;
+    --accent-soft: #263650;
+    --border: rgba(226, 232, 240, 0.16);
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] body,
+:root[data-theme="dark"] html {
+    background: var(--bg);
+    color: var(--text);
+}
+
+:root[data-theme="dark"] nav {
+    background: rgba(17, 24, 32, 0.94);
+}
+
+:root[data-theme="dark"] .availability {
+    color: #a6dfb4;
+}
+
+:root[data-theme="dark"] .availability span {
+    background: #65bd7b;
+}
+
+.theme-toggle {
+    flex: 0 0 auto;
+    padding: 0.42rem 0.72rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 0.76rem;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.theme-toggle:focus-visible {
+    box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+@media (max-width: 700px) {
+    .theme-toggle {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .theme-toggle {
+        margin-top: 0.45rem;
+    }
+}
